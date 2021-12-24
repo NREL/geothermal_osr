@@ -29,7 +29,11 @@ Alternatively, if you choose to avoid using conda, install manually all Python p
 
 # Running:
 
-TBD
+From the terminal, launch JupyterLab by running: 
+
+`jupyter lab --no-browser --ip=0.0.0.0`
+
+This works well for running JupyterLab on a remote machine and then using ssh to set up port forwarding (i.e., `ssh -L <local port>:localhost:<remote port> <hostname>`). If you run the notebooks on a local machine, it is enough to run: `jupyter lab`.
 
 -------
 Written by: Dmitry Duplyakin (dmitry.duplyakin@nrel.gov) in collaboration with the National Renewable Energy Laboratories.
