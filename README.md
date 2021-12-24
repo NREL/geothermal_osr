@@ -9,7 +9,7 @@ It includes both simulation data for OSR, as well as Jupyter notebooks for train
 
 ---------------
 
-# Requirements:
+# Requirements
 
 `conda` is not a requirement strictly speaking, but it makes it very easy to get Python dependenies for the code included in this repo. If you don't currently have conda on your machine, it is recommended to install it by following instructions from: [https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) 
 
@@ -27,11 +27,24 @@ The last command should be run every time you close the terminal window with the
 
 Alternatively, if you choose to avoid using conda, install manually all Python packages listed in `environment.yml` and that should be sufficient for running the notebooks. 
 
-# Running:
+# Running
 
-TBD
+From the terminal, launch JupyterLab by running: 
 
--------
+`jupyter lab --no-browser --ip=0.0.0.0`
+
+This works well for running JupyterLab on a remote machine and then using `ssh` to set up port forwarding (i.e., `ssh -L <local_port>:localhost:<remote_port> <hostname>`). If you run the notebooks on a local machine, it is enough to run: `jupyter lab`.
+
+After this step, open your browser and navigate to URL that looks like this:
+
+`http://127.0.0.1:<port>/?token=XXXYYY...ZZZ` -- this URL can be found near the end of the output of the jupyter command in the terminal. 
+
+This should take you to the running instance of JupyterLab and you should see the directory listing on the left-hand side of the screen.
+
+Open the `notebooks` directory where you can find the `osr-[0-3]-*.ipynb` notebooks. It is recommended that you run them in the logical order, according to the numbers in the names.
+
+# Credit
+
 Written by: Dmitry Duplyakin (dmitry.duplyakin@nrel.gov) in collaboration with the National Renewable Energy Laboratories.
 
 Full team: Dmitry Duplyakin, Koenraad F. Beckers, Drew L. Siler, Michael J. Martin, Henry E. Johnston
