@@ -45,6 +45,10 @@ This should take you to the running instance of JupyterLab and you should see th
 
 Open the `notebooks` directory where you can find the `osr-[0-3]-*.ipynb` notebooks. It is recommended that you run them in the logical order, according to the numbers in the names.
 
+# Paper
+
+We will add a link to our paper here once it is published.
+
 # Credit
 
 Written by: Dmitry Duplyakin (dmitry.duplyakin@nrel.gov) in collaboration with the National Renewable Energy Laboratories.
