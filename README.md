@@ -17,7 +17,9 @@ conda environment with the dependencies required to run code from this repo can 
 
 `conda env create -f environment.yml`
 
-Once this step successfully completes, run:
+Note that `enironment.yml` is an environment file was tested and confirmed to be working on Eagle, NREL's supercomputer (more about machine specs: [https://www.nrel.gov/hpc/eagle-system.html](https://www.nrel.gov/hpc/eagle-system.html)). No adjustment should be required for using it on similar Linux systems, whereas Windows and OSX machines might require some tuning in this file  (e.g., changing versions of the packages). 
+
+Once the last command successfully completes, run:
 
 `conda activate geothermal_osr`
 
@@ -42,6 +44,10 @@ After this step, open your browser and navigate to URL that looks like this:
 This should take you to the running instance of JupyterLab and you should see the directory listing on the left-hand side of the screen.
 
 Open the `notebooks` directory where you can find the `osr-[0-3]-*.ipynb` notebooks. It is recommended that you run them in the logical order, according to the numbers in the names.
+
+# Paper
+
+We will add a link to our paper here once it is published.
 
 # Credit
 
