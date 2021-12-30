@@ -416,10 +416,10 @@ class Reservoir:
                     self.timeseries[c].to_numpy().reshape(-1, 1))
 
 # For initial testing:
-# bhs = Reservoir(config)
-# print(bhs.name_mapper)
-# print(bhs.timeseries.head())
-# print(bhs.energy.head())
+# osr = Reservoir(config)
+# print(osr.name_mapper)
+# print(osr.timeseries.head())
+# print(osr.energy.head())
 
 
 class ReservoirPredictionEnsemble:
