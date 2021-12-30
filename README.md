@@ -45,6 +45,12 @@ This should take you to the running instance of JupyterLab and you should see th
 
 Open the `notebooks` directory where you can find the `osr-[0-3]-*.ipynb` notebooks. It is recommended that you run them in the logical order, according to the numbers in the names.
 
+Summary of the notebooks:
+* `notebooks/osr-0-minimal.ipynb` -- minimal notebook that trains a single model on the Train subset and evalutes it on the Test subset.
+* `notebooks/osr-1-train_with_cross_validation.ipynb` -- notebook with cross-validation for model training. Takes a long time to run for a fairly large set of hyperparameter combinations being evaluated. Saves results of cross-validation into a file, which can be read by the following notebook.
+* `notebooks/osr-2-analyze_cross_validation.ipynb` -- loads results of cross-validation from the specified file, displays summaries, and produces plots.
+* `notebooks/osr-3-train_production.ipynb` -- trains production models according to the configuration selected based on cross-validation; the notebook also includes final model evaluation and sensitivity analysis.
+
 # Paper
 
 We will add a link to our paper here once it is published.
