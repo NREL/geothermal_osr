@@ -61,3 +61,6 @@ Written by: Dmitry Duplyakin (dmitry.duplyakin@nrel.gov) in collaboration with t
 
 Full team: Dmitry Duplyakin, Koenraad F. Beckers, Drew L. Siler, Michael J. Martin, Henry E. Johnston
 
+# License
+
+Refer to the file called: `LICENSE`.
