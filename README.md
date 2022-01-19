@@ -12,8 +12,8 @@ It includes both simulation data for OSR, as well as Jupyter notebooks for train
 # Quick Start
 
 The easiest way to run the notebooks from this repo is through [binder](https://mybinder.org/). Simply, click this icon to get started:
-
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/NREL/geothermal_osr/HEAD?labpath=README.md)
+ 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/NREL/geothermal_osr/HEAD)
 
 When run for the first time, the configuration process will take some time (i.e., a brand-new Docker image will need to be created based on the `environment.yml` file with required dependencies. After the initial slow run, the subsequent runs are going to be much faster.   
 
