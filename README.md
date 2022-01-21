@@ -12,13 +12,14 @@ It includes both simulation data for OSR, as well as Jupyter notebooks for train
 # Quick Start
 
 The easiest way to run the notebooks from this repo is through [binder](https://mybinder.org/). Simply, click this icon to get started:
-
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/NREL/geothermal_osr/HEAD?labpath=README.md)
+ 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/NREL/geothermal_osr/HEAD)
 
 When run for the first time, the configuration process will take some time (i.e., a brand-new Docker image will need to be created based on the `environment.yml` file with required dependencies. After the initial slow run, the subsequent runs are going to be much faster.   
 
 This Binder integration allows running the notebooks in the cloud, through your browser, without the need to install and configure any Python packages locally. For more information about local installations, refer to the instructions provided in the remainder of this readme file. The main reason why a local installation might be selected is to achieve higher performance and faster processing: Binder resources are cloud resources that are shared across its numerous users, whereas, locally, the notebooks can use all computing resources that are available (on a laptop or on a dedicated compute node in the compute cluster being used).    
 
+After Binder completes the setup, you should see a page with the Jupyter icon at the top and the listing of the directories and files in this repo. This will be a fully functional instance of Jupyter notebook server, where you can nagivate to the `notebooks` folder and run the included notebooks (you can modify them if you want to as well). Refer to the summary of the notebooks near the end of this readme file for more information about each notebook.
 
 ---------------
 
