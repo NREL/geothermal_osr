@@ -63,7 +63,8 @@ Summary of the notebooks:
 * `notebooks/osr-0-minimal.ipynb` -- minimal notebook that trains a single model on the Train subset and evalutes it on the Test subset.
 * `notebooks/osr-1-train_with_cross_validation.ipynb` -- notebook with cross-validation for model training. Takes a long time to run for a fairly large set of hyperparameter combinations being evaluated. Saves results of cross-validation into a file, which can be read by the following notebook.
 * `notebooks/osr-2-analyze_cross_validation.ipynb` -- loads results of cross-validation from the specified file, displays summaries, and produces plots.
-* `notebooks/osr-3-train_production.ipynb` -- trains production models according to the configuration selected based on cross-validation; the notebook also includes final model evaluation and sensitivity analysis.
+* `notebooks/osr-3-train_production.ipynb` -- trains production models according to the configuration selected based on cross-validation; the notebook also includes final model evaluation and sensitivity analysis. Takes a long time to run.
+* `osr-4-use_production.ipynb` -- notebook that loads the trained models and runs them to predict the test-subset cases (i.e., the ones that weren't used in the model training). It is fast to run, and it produces plots with true & predicted timeseries for pressure and temperature values for the test cases; it also produces a dataframe with the results of error analysis.  
 
 # Paper
 
