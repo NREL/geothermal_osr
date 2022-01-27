@@ -9,7 +9,16 @@ It includes both simulation data for OSR, as well as Jupyter notebooks for train
 
 ---------------
 
-# Quick Start
+# Overview
+
+There are two ways to use the code in this repository:
+
+1. Use cloud integration provided by [binder](https://mybinder.org/). Follow **1. Quick Start** and then skip to **4. Notebooks**.
+2. Use your own computing resources (e.g., a laptop or a machine in a datacenter) to install all dependencies. For ths option, skip *1. Quick Start* and follow: **2. Requirements**, **3. Running**, and refer to **4. Notebooks** for more information about the notebooks.
+
+---------------
+
+# 1. Quick Start
 
 The easiest way to run the notebooks from this repo is through [binder](https://mybinder.org/). Simply, click this icon to get started:
  
@@ -23,7 +32,7 @@ After Binder completes the setup, you should see a page with the Jupyter icon at
 
 ---------------
 
-# Requirements
+# 2. Requirements
 
 `conda` is not a requirement strictly speaking, but it makes it very easy to get Python dependenies for the code included in this repo. If you don't currently have conda on your machine, it is recommended to install it by following instructions from: [https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) 
 
@@ -43,7 +52,7 @@ The last command should be run every time you close the terminal window with the
 
 Alternatively, if you choose to avoid using conda, install manually all Python packages listed in `environment.yml` and that should be sufficient for running the notebooks. 
 
-# Running
+# 3. Running
 
 From the terminal, launch JupyterLab by running: 
 
@@ -59,12 +68,16 @@ This should take you to the running instance of JupyterLab and you should see th
 
 Open the `notebooks` directory where you can find the `osr-[0-3]-*.ipynb` notebooks. It is recommended that you run them in the logical order, according to the numbers in the names.
 
-Summary of the notebooks:
+# 4. Notebooks
+
+Summary of the available notebooks:
 * `notebooks/osr-0-minimal.ipynb` -- minimal notebook that trains a single model on the Train subset and evalutes it on the Test subset.
 * `notebooks/osr-1-train_with_cross_validation.ipynb` -- notebook with cross-validation for model training. Takes a long time to run for a fairly large set of hyperparameter combinations being evaluated. Saves results of cross-validation into a file, which can be read by the following notebook.
 * `notebooks/osr-2-analyze_cross_validation.ipynb` -- loads results of cross-validation from the specified file, displays summaries, and produces plots.
 * `notebooks/osr-3-train_production.ipynb` -- trains production models according to the configuration selected based on cross-validation; the notebook also includes final model evaluation and sensitivity analysis. Takes a long time to run.
 * `osr-4-use_production.ipynb` -- notebook that loads the trained models and runs them to predict the test-subset cases (i.e., the ones that weren't used in the model training). It is fast to run, and it produces plots with true & predicted timeseries for pressure and temperature values for the test cases; it also produces a dataframe with the results of error analysis.  
+
+------
 
 # Paper
 
