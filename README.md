@@ -16,6 +16,8 @@ There are two ways to use the code in this repository:
 1. Use cloud integration provided by [binder](https://mybinder.org/). Follow **1. Quick Start** and then skip to **4. Notebooks**.
 2. Use your own computing resources (e.g., a laptop or a machine in a datacenter) to install all dependencies. For ths option, skip *1. Quick Start* and follow: **2. Requirements**, **3. Running**, and refer to **4. Notebooks** for more information about the notebooks.
 
+Option 1 is a great way to get started (no installation required), whereas Option 2 is more suited for long-term experimentation, futher developement, and situations where computing performance matters.  
+
 ---------------
 
 # 1. Quick Start
