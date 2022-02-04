@@ -83,7 +83,7 @@ Summary of the available notebooks:
 
 # Paper
 
-We will add a link to our paper here once it is published.
+Our 2022 paper "Modeling Subsurface Performance of a Geothermal Reservoir Using Machine Learning" is available at: https://www.mdpi.com/1996-1073/15/3/967
 
 # Credit
 
